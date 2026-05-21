@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://great-dane-hub.github.io/sitemap.xml
