@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Great Dane Bloat Lifetime Risk Statistics</title>
-<meta name="description" content="If you&#x27;re a proud Great Dane owner, you know these gentle giants bring immense joy and love into your home. But with their magnificent stature comes a…">
+<title>Why 42% of Great Danes Face This Silent Killer</title>
+<meta name="description" content="Discover the shocking bloat statistics vets won't tell you. Learn what Great Dane owners must know to save their dog's life today." />
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://great-dane-hub.github.io/great-dane-bloat-lifetime-risk-statistics.html">
 <style>
@@ -84,7 +84,7 @@
 <section class="hero">
   <div class="hero-inner">
     <p>Great Dane owner notes</p>
-    <h1>Great Dane Bloat Lifetime Risk Statistics</h1>
+    <h1>Why 42% of Great Danes Face This Silent Killer</h1>
     <p class="lead">If you&#x27;re a proud Great Dane owner, you know these gentle giants bring immense joy and love into your home. But with their magnificent stature comes a…</p>
   </div>
 </section>
@@ -99,6 +99,13 @@
 
             <h2>What Exactly Is Bloat (GDV)? A Simple Explanation</h2>
             <p>Bloat, medically known as Gastric Dilatation-Volvulus (GDV), is a life-threatening condition where a dog's stomach fills with gas and twists on itself. Imagine a balloon filling up and then tying a knot in the middle – that's essentially what happens. This twisting cuts off blood supply to the stomach and other organs, leading to rapid shock and death if not treated immediately.</p>
+
+<figure style="margin: 22px 0; text-align: center;">
+  <a href="https://www.reddit.com/r/greatdanes/comments/1tmsy79/5_months_gonna_be_a_monster/" target="_blank" rel="noopener noreferrer">
+    <img src="https://i.redd.it/b3l76ob4g63h1.jpeg" alt="5 months. Gonna be a monster!" style="max-width:100%; border-radius:10px; box-shadow: 0 2px 12px rgba(0,0,0,0.15);">
+  </a>
+  <figcaption style="font-size:0.85rem; color:#6b7280; margin-top:8px;">Photo by <a href="https://www.reddit.com/r/greatdanes/comments/1tmsy79/5_months_gonna_be_a_monster/" target="_blank" rel="noopener noreferrer">u//u/smokinporkbutts</a> on <a href="https://www.reddit.com/r/greatdanes/" target="_blank" rel="noopener noreferrer">r/greatdanes</a> (0 upvotes)</figcaption>
+</figure>
             <p class="alert"><strong>Key Takeaway:</strong> Bloat is an emergency. It progresses rapidly and requires immediate veterinary intervention. For daily care habits, see our <a href="/care.html">Great Dane care guide</a>.</p>
 
             <h2>The Alarming Great Dane Bloat Lifetime Risk Statistics</h2>
@@ -209,7 +216,8 @@
       <input type="email" placeholder="Your email">
       <button>Get the notes</button>
     </section>
-<section class="sidebar-panel"><h3>Quick Links</h3><ul><li><a href="/">Home page</a></li><li><a href="/blog.html">All posts</a></li><li><a href="/care.html">Great Dane care checklist</a></li><li><a href="/about.html">About this site</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul><h3 style="margin-top:16px;">Latest articles</h3><ul><li><a href="/great-dane-lifespan-by-weight-statistics.html">Great Dane Lifespan By Weight Statistics</a></li></ul></section>
+    <section class="sidebar-panel"><h3>More Great Dane Articles</h3><ul><li><a href="/great-dane-lifespan-by-weight-statistics.html">Great Dane Lifespan By Weight Statistics</a></li></ul></section>
+    <section class="sidebar-panel"><h3>Quick Links</h3><ul><li><a href="/">Home page</a></li><li><a href="/blog.html">All posts</a></li><li><a href="/care.html">Great Dane care checklist</a></li><li><a href="/about.html">About this site</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul><h3 style="margin-top:16px;">Latest articles</h3><ul><li><a href="/great-dane-lifespan-by-weight-statistics.html">Great Dane Lifespan By Weight Statistics</a></li></ul></section>
   </aside>
 </div>
 <footer class="footer">
@@ -218,5 +226,68 @@
     <span><a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/sitemap.html">Sitemap</a></span>
   </div>
 </footer>
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "great-dane-hub.github.io";
+  var _article = "great-dane-bloat-lifetime-risk-statistics";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  // Scroll depth
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  // Time on page
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  // Newsletter CTA
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  // Pageview
+  _send("article_view", {});
+})();
+</script>
 </body>
 </html>
