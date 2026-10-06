@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Great Dane Care Checklist</title>
-<meta name="description" content="Use this page as the short checklist view for temperature, routine, feeding, skin care, and training priorities.">
+<title>Great Dane Care Guides | Great Dane Guide</title>
+<link rel="canonical" href="https://great-dane-hub.github.io/care.html">
+<meta name="description" content="Danes grow fast and need bloat awareness from day one. These guides cover growth, feeding and emergencies.">
 <meta name="robots" content="index, follow">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -12,15 +13,15 @@
   a { color: #431407; text-decoration: none; }
   a:hover { text-decoration: underline; }
   .topbar { background: #431407; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
-  .topbar-inner { max-width: 1040px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
   .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
   .nav { display: flex; gap: 14px; flex-wrap: wrap; }
   .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
   .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
-  .breadcrumb-inner { max-width: 1040px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb-inner { max-width: 1120px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .breadcrumb a { color: #6b7280; }
   .breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
-  .wrap { max-width: 1040px; margin: 28px auto; padding: 0 22px 40px; }
+  .wrap { max-width: 1120px; margin: 28px auto; padding: 0 22px 40px; }
   .panel { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
   h1 { color: #340f05; font-size: 2rem; margin-bottom: 10px; }
   h2 { color: #340f05; font-size: 1.3rem; margin: 24px 0 10px; }
@@ -28,36 +29,114 @@
   ul { padding-left: 20px; margin: 12px 0; }
   .intro { font-size: 1rem; margin-bottom: 18px; }
   .footer { background: #340f05; color: rgba(255,255,255,0.75); margin-top: 32px; }
-  .footer-inner { max-width: 1040px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 </style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #431407;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #351005;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Times New Roman', 'Times', serif}body h1,body h2,body h3{font-family:'Times New Roman', 'Times', serif}</style>
 </head>
 <body>
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="/">Great Dane Guide</a>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/care.html">Care</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/sitemap.html">Sitemap</a>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Great Dane Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
     </nav>
   </div>
 </header>
-<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1040px;"><a href="/">Home</a><span>›</span><span aria-current="page">Great Dane Care Checklist</span></div></nav>
+
+
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb"><div class="breadcrumb-inner" style="max-width:1120px;"><a href="/">Home</a><span>›</span><span aria-current="page">Great Dane Care Guides</span></div></nav>
 <div class="wrap">
   <section class="panel">
-    <h1>Great Dane Care Checklist</h1>
-    <p class="intro">Use this page as the short checklist view for temperature, routine, feeding, skin care, and training priorities.</p>
-    <h2>Daily basics</h2><ul><li>Monitor breathing comfort after walks.</li><li>Keep meals measured and predictable.</li><li>Check skin folds and paws quickly in the evening.</li><li>Use short walks and calm recovery windows.</li></ul><h2>Weekly review</h2><ul><li>Review body condition and treat volume.</li><li>Clean ears if needed.</li><li>Check harness fit and rubbing points.</li><li>Adjust routines before small issues become habits.</li></ul>
-  </section>
+<h1>Great Dane Care Guides</h1>
+<p>Danes grow fast and need bloat awareness from day one. These guides cover growth, feeding and emergencies.</p><ul style="line-height:1.6"><li><a href="/great-dane-bloat-lifetime-risk-statistics.html">Why 42% of Great Danes Face This Silent Killer</a><br><span style="color:#6b7280">Discover the shocking bloat statistics vets won&#x27;t tell you. Learn what Great Dane owners must know to save their dog&#x27;s life today.</span></li><li><a href="/great-dane-lifespan-by-weight-statistics.html">Great Dane Lifespan: 5 Weight Classes—Life Expectancy Drops Fast</a><br><span style="color:#6b7280">Discover how Great Dane weight affects lifespan. See 5 weight categories &amp; expected years before time runs out. Critical data inside.</span></li></ul>
+</section>
 </div>
-<footer class="footer">
-  <div class="footer-inner">
-    <p>Great Dane Guide</p>
-    <p><a href="/privacy.html" style="color:rgba(255,255,255,0.9);">Privacy</a> <span style="opacity:0.55;">|</span> <a href="/contact.html" style="color:rgba(255,255,255,0.9);">Contact</a> <span style="opacity:0.55;">|</span> <a href="/sitemap.html" style="color:rgba(255,255,255,0.9);">Sitemap</a></p>
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
   </div>
+  <p>&copy; 2026 great-dane-hub.github.io &mdash; Great Dane Guide. All rights reserved.</p>
 </footer>
 </body>
 </html>
