@@ -140,6 +140,7 @@
   }
  ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "Bone Cancer Treatment in Dogs: What You Need to Know Part 2 (Vlog 72)", "description": "A veterinary oncologist explains osteosarcoma treatment in dogs: curative-intent amputation and chemotherapy, palliative options and prognosis.", "thumbnailUrl": "https://i.ytimg.com/vi/hdlVxXMa7FQ/hqdefault.jpg", "uploadDate": "2019-05-31", "embedUrl": "https://www.youtube-nocookie.com/embed/hdlVxXMa7FQ", "contentUrl": "https://www.youtube.com/watch?v=hdlVxXMa7FQ"}</script>
 <style id="site-chrome">
 :where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
 [class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
@@ -255,16 +256,54 @@
     <nav class="toc">
       <h2>Table of Contents</h2>
       <ul>
+        <li><a href="#planner">Decision planner: survival, cost and mobility</a></li>
         <li><a href="#survival">How long does a Great Dane live with osteosarcoma after each option?</a></li>
         <li><a href="#weight">Can a 150 lb Great Dane walk well on three legs?</a></li>
         <li><a href="#palliative">What does palliative care actually include?</a></li>
         <li><a href="#costs">How much does each path cost?</a></li>
-        <li><a href="#planner">Decision planner: survival, cost and mobility</a></li>
         <li><a href="#steps">The 7-day decision checklist</a></li>
         <li><a href="#mistakes">Common mistakes owners make</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
+
+    <section id="planner">
+      <h2>Decision planner: survival, cost and mobility in one view</h2>
+      <p>Enter your dog's details and the quotes from your clinic. The planner uses the published medians from the quick answer above to show expected months, cost per expected month and a mobility flag. It does not replace your vet, but it gives you the comparison in about one minute.</p>
+      <div class="planner" id="osaPlanner">
+        <div class="planner-grid">
+          <label>Dog's weight (lb)<input type="number" id="pWeight" value="150" min="40" max="250"></label>
+          <label>Body condition
+            <select id="pBcs">
+              <option value="ideal">Lean / ideal (ribs easy to feel)</option>
+              <option value="heavy">Slightly heavy</option>
+              <option value="obese">Clearly overweight</option>
+            </select>
+          </label>
+          <label>Age (years)<input type="number" id="pAge" value="8" min="1" max="15"></label>
+          <label>Lung spread on chest X-rays?
+            <select id="pMets">
+              <option value="no">No visible spread</option>
+              <option value="unknown">Not checked yet</option>
+              <option value="yes">Yes, metastasis seen</option>
+            </select>
+          </label>
+          <label>Problems in the other legs?
+            <select id="pOrtho">
+              <option value="none">None known</option>
+              <option value="some">Arthritis or past injury</option>
+            </select>
+          </label>
+          <label>Your total budget (USD)<input type="number" id="pBudget" value="8000" min="0" step="100"></label>
+          <label>Amputation quote incl. diagnostics (USD)<input type="number" id="pAmp" value="6938" min="0" step="50"></label>
+          <label>Chemotherapy quote (USD)<input type="number" id="pChemo" value="4000" min="0" step="50"></label>
+          <label>Palliative radiation + meds quote (USD)<input type="number" id="pPall" value="" min="0" step="50" placeholder="Enter your clinic's quote"></label>
+        </div>
+        <button type="button" id="pRun">Compare my options</button>
+        <div id="pOut" aria-live="polite"></div>
+      </div>
+      <p class="small-note">Default costs are the 155 lb dog from the Tripawds thread (2017). Replace them with your own quotes for a real comparison.</p>
+    </section>
 
     <section id="why-danes">
       <h2>Why Great Danes get bone cancer so often</h2>
@@ -278,6 +317,8 @@
       <p>Expect about 4 to 5 months with amputation alone and 10 to 12 months with amputation plus chemotherapy. Palliative radiation gives roughly 3.5 to 4 months. These are medians: half of dogs live longer and half live shorter.</p>
       <p>The amputation figures come from a veterinary oncology summary published by <a href="https://www.dvm360.com/view/cvc-virginia-beach-2017-osteosarcoma" target="_blank" rel="noopener">dvm360</a>. With amputation alone, 10% of dogs reach one year and 2% reach two years. Adding chemotherapy raises one-year survival to 50%, with 15% to 20% reaching two years. The same source explains why: although only 10% to 15% of dogs have visible spread at diagnosis, 90% die of metastasis within a year without systemic treatment. The cancer has usually seeded the lungs microscopically before anyone sees it.</p>
 
+      <p>Veterinary oncologist Dr. Sue Ettinger explains the same fork in the road in this video: treatment with curative intent (amputation, usually with chemotherapy) versus palliative care for pain, plus what each choice means for prognosis. It was recorded in 2019, so check newer options with your own oncologist.</p>
+      <figure class="yt-video" style="margin:20px 0 26px"><div style="position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden"><iframe src="https://www.youtube-nocookie.com/embed/hdlVxXMa7FQ" title="Bone Cancer Treatment in Dogs: What You Need to Know Part 2 (Vlog 72)" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><figcaption style="font-size:.86rem;color:#6b7280;margin-top:6px">Video: Bone Cancer Treatment in Dogs: What You Need to Know Part 2 (Vlog 72) (Dr Sue Cancer Vet, YouTube)</figcaption></figure>
       <h3>Side-by-side comparison</h3>
       <table>
         <thead>
@@ -336,44 +377,6 @@
         <li><strong>Hospital handling.</strong> Moving and nursing a 150 lb dog after surgery can take extra staff.</li>
         <li><strong>Palliative care is not "free."</strong> Repeated pain-drug refills, radiation sessions and possible emergency fracture care add up over months. Ask for a written estimate for each path, then enter both into the planner below.</li>
       </ul>
-    </section>
-
-    <section id="planner">
-      <h2>Decision planner: survival, cost and mobility in one view</h2>
-      <p>Enter your dog's details and the quotes from your clinic. The planner uses the published medians above to show expected months, cost per expected month and a mobility flag. It does not replace your vet, but it gives you the comparison in about one minute.</p>
-      <div class="planner" id="osaPlanner">
-        <div class="planner-grid">
-          <label>Dog's weight (lb)<input type="number" id="pWeight" value="150" min="40" max="250"></label>
-          <label>Body condition
-            <select id="pBcs">
-              <option value="ideal">Lean / ideal (ribs easy to feel)</option>
-              <option value="heavy">Slightly heavy</option>
-              <option value="obese">Clearly overweight</option>
-            </select>
-          </label>
-          <label>Age (years)<input type="number" id="pAge" value="8" min="1" max="15"></label>
-          <label>Lung spread on chest X-rays?
-            <select id="pMets">
-              <option value="no">No visible spread</option>
-              <option value="unknown">Not checked yet</option>
-              <option value="yes">Yes, metastasis seen</option>
-            </select>
-          </label>
-          <label>Problems in the other legs?
-            <select id="pOrtho">
-              <option value="none">None known</option>
-              <option value="some">Arthritis or past injury</option>
-            </select>
-          </label>
-          <label>Your total budget (USD)<input type="number" id="pBudget" value="8000" min="0" step="100"></label>
-          <label>Amputation quote incl. diagnostics (USD)<input type="number" id="pAmp" value="6938" min="0" step="50"></label>
-          <label>Chemotherapy quote (USD)<input type="number" id="pChemo" value="4000" min="0" step="50"></label>
-          <label>Palliative radiation + meds quote (USD)<input type="number" id="pPall" value="" min="0" step="50" placeholder="Enter your clinic's quote"></label>
-        </div>
-        <button type="button" id="pRun">Compare my options</button>
-        <div id="pOut" aria-live="polite"></div>
-      </div>
-      <p class="small-note">Default costs are the 155 lb dog from the Tripawds thread (2017). Replace them with your own quotes for a real comparison.</p>
     </section>
 
     <section id="steps">
