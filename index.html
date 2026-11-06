@@ -7,372 +7,15 @@
 <meta name="description" content="Your complete resource for Great Dane lovers. Breed facts, care tips, national day celebration guide and more.">
 <link rel="canonical" href="https://great-dane-hub.github.io/">
 <meta name="robots" content="index, follow">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Times New Roman', 'Times', serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #222;
-    background: #f8f8f8;
-  }
-  a { color: #431407; text-decoration: none; }
-  a:hover { text-decoration: underline; color: #351005; }
 
-  /* ── Top bar ── */
-  .topbar {
-    background: #431407;
-    color: #fff;
-    padding: 0 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  }
-  .topbar-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 54px;
-  }
-  .topbar-brand {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-  .topbar-nav {
-    display: flex;
-    gap: 4px;
-    list-style: none;
-  }
-  .topbar-nav a {
-    color: rgba(255,255,255,0.88);
-    font-size: 0.88rem;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.15s;
-  }
-  .topbar-nav a:hover {
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    text-decoration: none;
-  }
-  @media(max-width:600px) {
-    .topbar-nav { display: none; }
-  }
 
-  /* ── Breadcrumb ── */
-  .breadcrumb {
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  .breadcrumb-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 8px 20px;
-    font-size: 0.82rem;
-    color: #6b7280;
-  }
-  .breadcrumb-inner a { color: #431407; }
-  .breadcrumb-inner span { margin: 0 5px; }
 
-  /* ── Layout wrapper ── */
-  .page-wrap {
-    max-width: 1120px;
-    margin: 28px auto;
-    padding: 0 20px 64px;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 28px;
-    align-items: start;;grid-template-columns:minmax(0, 1fr) 300px;gap:26px;padding-left:22px;padding-right:22px;}
-  @media (max-width: 700px) {
-    .page-wrap { grid-template-columns: 1fr; }
-    .sidebar { display: none; }
-  }
 
-  /* ── Main ── */
-  .main-content {
-    background: #fff;
-    border-radius: 8px;
-    padding: 28px 28px 32px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  }
-  .main-content h1 {
-    font-size: 1.75rem;
-    color: #351005;
-    margin-bottom: 10px;
-    line-height: 1.3;
-    border-bottom: 3px solid #431407;
-    padding-bottom: 12px;
-  }
-  .main-content .intro {
-    color: #555;
-    margin-bottom: 28px;
-    font-size: 1rem;
-  }
-  .article-card {
-    border: 1px solid #e5e7eb;
-    border-left: 4px solid #431407;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    background: #fafafa;
-    transition: box-shadow 0.2s;
-  }
-  .article-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-  .article-card h2 {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-  }
-  .article-card h2 a { color: #351005; }
-  .article-card .meta { color: #9ca3af; font-size: 0.8rem; margin-bottom: 6px; }
-  .article-card p { color: #555; font-size: 0.93rem; margin: 0; }
-
-  /* ── Categories ── */
-  .categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
-  .cat-tag {
-    background: #431407;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-
-  /* ── Sidebar ── */
-  .sidebar { position: sticky; top: 70px; }
-  .sidebar-widget {
-    background: #431407;
-    border-radius: 10px;
-    padding: 22px 18px;
-    color: #fff;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
-    margin-bottom: 20px;
-  }
-  .sidebar-widget h3 { font-size: 1rem; margin-bottom: 8px; font-weight: 700; }
-  .sidebar-widget p { font-size: 0.86rem; margin-bottom: 12px; opacity: 0.9; }
-  .sidebar-widget input[type="email"] {
-    width: 100%; padding: 9px 11px; border: none; border-radius: 5px;
-    font-size: 0.88rem; margin-bottom: 8px; outline: none;
-  }
-  .sidebar-widget button {
-    width: 100%; padding: 10px; background: #fff; color: #431407;
-    border: none; border-radius: 5px; font-weight: 700; font-size: 0.88rem;
-    cursor: pointer;
-  }
-  .sidebar-widget .disclaimer {
-    font-size: 0.7rem; opacity: 0.65; margin-top: 8px; text-align: center;
-  }
-  .sidebar-about {
-    background: #fff; border-radius: 8px; padding: 18px 16px;
-    font-size: 0.88rem; color: #444; line-height: 1.6;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    margin-bottom: 20px;
-  }
-  .sidebar-about strong { color: #351005; display: block; margin-bottom: 6px; font-size: 0.95rem; }
-  .sidebar-links {
-    background: #fff; border-radius: 8px; padding: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  }
-  .sidebar-links h4 { font-size: 0.9rem; color: #351005; margin-bottom: 10px; }
-  .sidebar-links ul { list-style: none; }
-  .sidebar-links li { padding: 4px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.86rem; }
-  .sidebar-links li:last-child { border: none; }
-  .sidebar-links a { color: #431407; }
-
-  /* ── Footer ── */
-  .footer {
-    background: #351005;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
-    padding: 24px 16px;
-    font-size: 0.82rem;
-    margin-top: 40px;
-  }
-  .footer-nav { margin-bottom: 8px; }
-  .footer-nav a {
-    color: rgba(255,255,255,0.85);
-    margin: 0 10px;
-    font-size: 0.85rem;
-  }
-
-  /* ── Bottom mobile bar (wariant bottom_mobile) ── */
-  #bottom-bar input[type="email"] { flex: 1; min-width: 0; }
-  @media (max-width: 480px) {
-    #bottom-bar span { display: none; }
-  }
-</style>
-<style id="sc-font">body{font-family:'Times New Roman', 'Times', serif}body h1,body h2,body h3{font-family:'Times New Roman', 'Times', serif}</style>
-<style id="site-chrome">
-:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
-[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
-/* ── Top bar ── */
-  .sc-topbar{
-    background: #431407;
-    color: #fff;
-    padding: 0 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  }
-.sc-topbar-inner{
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 54px;
-  }
-.sc-topbar-brand{
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-.sc-topbar-nav{
-    display: flex;
-    gap: 4px;
-    list-style: none;
-  }
-.sc-topbar-nav a{
-    color: rgba(255,255,255,0.88);
-    font-size: 0.88rem;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.15s;
-  }
-.sc-topbar-nav a:hover{
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    text-decoration: none;
-  }
-@media(max-width:600px) {
-    .sc-topbar-nav { display: none; }}
-/* ── Footer ── */
-  .sc-footer{
-    background: #351005;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
-    padding: 24px 16px;
-    font-size: 0.82rem;
-    margin-top: 40px;
-  }
-.sc-footer-nav{ margin-bottom: 8px; }
-.sc-footer-nav a{
-    color: rgba(255,255,255,0.85);
-    margin: 0 10px;
-    font-size: 0.85rem;
-  }
-.sc-topbar a,.sc-footer a{text-decoration:none}
-/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
-a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
-/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
-.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
-@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
-</style>
-<style id="sc-dane-design">
-:root{--p:#f1f4f8;--i:#17212e;--m:#4f5d6e;--l:#d3dce8;--d:#1d2a3a;--od:#eef3f9;--a:#6c8ebf;--ai:#2f5487;--card:#ffffff;--bar:#1d2a3a;--bart:#eef3f9;--r:4px;--hf:'Palatino Linotype',Palatino,'Book Antiqua',serif;--bf:Verdana,Geneva,sans-serif;--p2:#dce4ef}
-body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
-header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
-header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
-header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:uppercase}
-header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
-header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
-header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
-.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
-.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
-.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:uppercase;text-wrap:balance}
-.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
-.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
-.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
-.sd-art{min-height:220px;background:repeating-linear-gradient(90deg,#6c8ebf 0 10px,transparent 10px 30px)}
-.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
-.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
-.main-content>:not(article){grid-column:1/-1}
-.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
-.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
-.main-content>article h2 a::after{content:"";position:absolute;inset:0}
-.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
-.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
-.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
-.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
-.sidebar-about strong{color:var(--i)}
-.hero{background:#1d2a3a!important;color:#eef3f9!important;border-bottom:4px solid var(--a)}
-.hero h1{color:#eef3f9!important;letter-spacing:-.02em;text-transform:uppercase}.hero p{color:#eef3f9!important;opacity:.9}
-.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
-.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
-.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
-.article th{background:var(--p2)!important;color:var(--i)!important}
-.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
-.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
-.wrap .panel h1{color:var(--i);text-transform:uppercase}
-footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
-footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
-
-.sd-cover{display:grid;grid-template-columns:1.25fr 1fr;background:var(--d);color:var(--od)}
-.sd-cover-text{padding:52px 44px}.sd-cover .cat-tag{background:transparent;color:var(--od);border-color:var(--a)}
-.sd-art{border-left:6px solid var(--a);opacity:.9}
-.main-content{grid-template-columns:repeat(3,minmax(0,1fr))}
-.main-content>article{border-top:5px solid var(--a)!important}
-.main-content>article:first-of-type{grid-column:1/-1;background:var(--p2)!important}
-.main-content>article:first-of-type h2{font-size:1.8rem!important}
-.main-content>article:hover{box-shadow:0 0 0 2px var(--a)}
-@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
-header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
-.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
-.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
-.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
-</style>
 
 <!-- home-photo-20261025 -->
-<style id="home-photo-20261025">
-/* home-photo-20261025 */
-.home-editorial-photo{margin:1.25rem auto;max-width:1100px;min-width:0}
-.home-editorial-photo img{display:block;width:100%;max-width:100%;height:auto}
-.home-editorial-photo figcaption{font-size:.8rem;line-height:1.5;padding:.5rem .75rem;color:inherit}
-.sd-cover .sd-art.home-editorial-photo{display:block;margin:0;min-height:0;height:auto;opacity:1;background:none;
-border:0;box-shadow:none;transform:none;aspect-ratio:auto}
-.sd-cover .home-editorial-photo img{height:auto;min-height:0;object-fit:contain}
-.home-photo-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-align-items:center;gap:clamp(20px,4vw,60px);padding:clamp(20px,4vw,60px)}
-.home-photo-hero>.hero-inner,.home-photo-hero>.ps-in{margin:0;max-width:none;padding:0;min-width:0}
-.home-photo-hero>.home-editorial-photo{margin:0;width:100%}
-@media(max-width:760px){.home-photo-hero{grid-template-columns:minmax(0,1fr)}
-.sd-cover:has(>.home-editorial-photo){grid-template-columns:minmax(0,1fr)}}
-</style>
 
-<style id="sidebar-follow-20261025">
-[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
-height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
-min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
-[data-follow-parent]{overflow:visible!important;align-items:start}
-.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
-width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
-[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
-.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
-background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
-.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
-.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
-.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
-overflow-wrap:anywhere;line-height:1.45}
-@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
-max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
-.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
-</style>
+
+
 
 <!-- social-cards:start -->
 <meta property="og:title" content="Great Dane Guide — Care, Facts &amp; National Day">
@@ -391,147 +34,204 @@ max-height:none!important;height:auto!important;overflow:visible!important;width
 <meta name="twitter:image" content="https://great-dane-hub.github.io/assets/social-share-20261025.jpg">
 <meta name="twitter:image:alt" content="harlequin Great Dane standing gently in a spacious living room">
 <!-- social-cards:end -->
-</head>
+<style id="gdh-design">
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 900;font-stretch:62% 125%;font-display:swap;src:url(/assets/gdh/archivo-wdth-wght-latin.woff2) format("woff2")}
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/gdh/publicsans-400-700-latin.woff2) format("woff2")}
+:root{--gdh-graphite:#1f2326;--gdh-graphite2:#2b3034;--gdh-ink:#15181a;--gdh-muted:#4d5559;--gdh-paper:#f2f4f3;--gdh-white:#ffffff;
+--gdh-line:#cfd6d4;--gdh-turq:#3fe0cf;--gdh-deep:#0a6e66;--gdh-mint:#d8f6f1;--gdh-fog:#b9c3c5;--gdh-ring:#3fe0cf;
+--gdh-surface:#ffffff;--gdh-text:#15181a;--gdh-accent:#0a6e66;--gdh-border:#cfd6d4;
+--gdh-display:"Archivo","Arial Black","Helvetica Neue",Arial,sans-serif;--gdh-sans:"Public Sans","Segoe UI","Helvetica Neue",Arial,sans-serif;
+--gdh-wide:1280px;--gdh-pad:40px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--gdh-paper);color:var(--gdh-ink);font:400 1.0625rem/1.7 var(--gdh-sans)}
+h1,h2,h3,h4{font-family:var(--gdh-display);font-weight:800;font-stretch:100%;color:var(--gdh-ink);line-height:1.12;letter-spacing:-.01em}
+a{color:var(--gdh-deep)}
+img{max-width:100%;height:auto}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--gdh-deep);outline-offset:3px}
+.gdh-shell{max-width:var(--gdh-wide);margin:0 auto;padding:0 var(--gdh-pad)}
+.gdh-skip{position:absolute;left:-9999px;top:8px;z-index:80;background:var(--gdh-turq);color:var(--gdh-ink);padding:12px 18px;font:800 1rem var(--gdh-display);text-decoration:none}
+.gdh-skip:focus{left:12px}
+/* four text styles: XXL display, heading, body, label */
+.gdh-xxl{margin:0;font:900 clamp(3.2rem,11.5vw,11rem)/.84 var(--gdh-display);font-stretch:118%;letter-spacing:-.035em;text-transform:uppercase;color:var(--gdh-ink)}
+.gdh-xxl em{font-style:normal;color:var(--gdh-deep);text-decoration:underline;text-decoration-color:var(--gdh-turq);text-decoration-thickness:.12em;text-underline-offset:.06em}
+.gdh-label,p.kicker{margin:0 0 14px;font:700 .8rem/1.4 var(--gdh-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gdh-deep)}
+.gdh-label b{color:var(--gdh-ink);margin-right:10px}
+/* one button, one hover everywhere: a ring appears around the element and the arrow moves right */
+.gdh-btn{display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:14px 26px;border:0;background:var(--gdh-turq);color:var(--gdh-ink);font:800 1rem/1.1 var(--gdh-display);font-stretch:110%;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;cursor:pointer;outline:3px solid transparent;outline-offset:4px;transition:outline-color .15s}
+.gdh-btn.gdh-dark{background:var(--gdh-graphite);color:var(--gdh-white)}
+.gdh-arrow{display:inline-block;transition:transform .15s}
+.gdh-btn:hover,.gdh-hover:hover,.gdh-nav a:hover,.gdh-card:hover{outline:3px solid var(--gdh-ring);outline-offset:4px}
+.gdh-btn:hover .gdh-arrow,.gdh-hover:hover .gdh-arrow,.gdh-card:hover .gdh-arrow,.gdh-textlink:hover .gdh-arrow{transform:translateX(5px)}
+.gdh-textlink{font:800 1rem var(--gdh-display);font-stretch:110%;text-transform:uppercase;letter-spacing:.02em;color:var(--gdh-ink);text-decoration:underline;text-decoration-color:var(--gdh-turq);text-decoration-thickness:4px;text-underline-offset:7px}
+/* header: graphite bar, white expanded wordmark, measuring-tape edge */
+.gdh-top{background:var(--gdh-graphite);color:var(--gdh-white);position:relative;z-index:30}
+.gdh-top-in{display:flex;align-items:center;gap:28px;min-height:78px}
+.gdh-brand{display:flex;align-items:baseline;gap:10px;color:#fff;text-decoration:none;font:900 1.55rem/1 var(--gdh-display);font-stretch:125%;letter-spacing:-.02em;text-transform:uppercase}
+.gdh-brand:hover{color:#fff}
+.gdh-brand small{font:700 .7rem var(--gdh-sans);letter-spacing:.2em;color:var(--gdh-turq)}
+.gdh-nav{margin-left:auto;display:flex;align-items:center;gap:6px}
+.gdh-nav a{color:var(--gdh-white);text-decoration:none;font:600 .82rem var(--gdh-sans);letter-spacing:.12em;text-transform:uppercase;padding:10px 12px;outline:3px solid transparent;outline-offset:2px}
+.gdh-nav a[aria-current="page"]{color:var(--gdh-turq)}
+.gdh-nav a.gdh-nav-cta{margin-left:10px;background:var(--gdh-turq);color:var(--gdh-ink);font-weight:700}
+.gdh-tape{height:14px;background-color:var(--gdh-graphite);background-image:linear-gradient(90deg,var(--gdh-turq) 2px,transparent 2px),linear-gradient(90deg,var(--gdh-turq) 1px,transparent 1px);background-size:60px 14px,12px 7px;background-repeat:repeat-x;background-position:0 0,0 0;border-bottom:2px solid var(--gdh-turq)}
+.gdh-menu{display:none;margin-left:auto}
+.gdh-menu summary{list-style:none;cursor:pointer;min-height:48px;display:flex;align-items:center;padding:0 18px;background:var(--gdh-turq);color:var(--gdh-ink);font:800 1rem var(--gdh-display);font-stretch:115%;text-transform:uppercase;letter-spacing:.04em}
+.gdh-menu summary::-webkit-details-marker{display:none}
+.gdh-menu[open] summary{background:var(--gdh-white)}
+.gdh-menu nav{position:absolute;left:0;right:0;top:100%;background:var(--gdh-graphite);border-top:2px solid var(--gdh-turq);padding:10px var(--gdh-pad) 24px}
+.gdh-menu-main{display:flex;justify-content:space-between;align-items:center;min-height:68px;color:var(--gdh-white);text-decoration:none;font:900 1.7rem/1 var(--gdh-display);font-stretch:115%;text-transform:uppercase;letter-spacing:-.01em;border-bottom:1px solid var(--gdh-graphite2)}
+.gdh-menu-main span{color:var(--gdh-turq)}
+.gdh-menu-more{display:flex;flex-wrap:wrap;gap:4px 20px;margin:16px 0 0}
+.gdh-menu-more a{color:var(--gdh-fog);font:600 .95rem var(--gdh-sans);padding:8px 0}
+/* sections */
+.gdh-section{padding:104px 0}
+.gdh-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:48px}
+.gdh-head h2{margin:0;font:900 clamp(2.6rem,6.4vw,6rem)/.9 var(--gdh-display);font-stretch:115%;letter-spacing:-.03em;text-transform:uppercase;max-width:14ch}
+.gdh-head p{margin:16px 0 0;color:var(--gdh-muted);max-width:56ch}
+.gdh-dark-band{background:var(--gdh-graphite);color:var(--gdh-white)}
+.gdh-dark-band h2,.gdh-dark-band h3{color:var(--gdh-white)}
+.gdh-dark-band .gdh-head p,.gdh-dark-band p{color:var(--gdh-fog)}
+.gdh-dark-band .gdh-label{color:var(--gdh-turq)}.gdh-dark-band .gdh-label b{color:var(--gdh-white)}
+.gdh-white-band{background:var(--gdh-white)}
+/* home hero */
+.gdh-hero{padding:72px 0 96px;background-image:linear-gradient(90deg,var(--gdh-line) 1px,transparent 1px);background-size:calc((100% - 0px)/12) 100%}
+.gdh-hero-row{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:end;margin-top:56px}
+.gdh-photo{margin:0;position:relative}
+.gdh-photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:66% 14%}
+.gdh-photo figcaption{margin-top:10px;font:600 .8rem var(--gdh-sans);letter-spacing:.08em;text-transform:uppercase;color:var(--gdh-muted)}
+.gdh-lead{font-size:1.2rem;line-height:1.6;color:var(--gdh-muted);max-width:40ch;margin:0 0 32px}
+.gdh-actions{display:flex;flex-wrap:wrap;align-items:center;gap:26px}
+/* 01 three sizing boxes */
+.gdh-boxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--gdh-graphite2)}
+.gdh-box{background:var(--gdh-graphite);padding:36px 32px 34px;display:flex;flex-direction:column;gap:14px;color:var(--gdh-white);text-decoration:none;outline:3px solid transparent;outline-offset:-3px}
+.gdh-box:hover{outline-color:var(--gdh-turq);outline-offset:-3px}
+.gdh-icon{width:56px;height:56px;fill:none;stroke:var(--gdh-turq);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.gdh-box h3{margin:6px 0 0;font:900 clamp(2.2rem,4vw,3.4rem)/.9 var(--gdh-display);font-stretch:118%;text-transform:uppercase;letter-spacing:-.02em}
+.gdh-box p{margin:0;flex:1}
+.gdh-box .gdh-more{font:800 .95rem var(--gdh-display);font-stretch:110%;text-transform:uppercase;color:var(--gdh-turq)}
+/* 02 four steps */
+.gdh-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;counter-reset:gdhstep}
+.gdh-steps li{counter-increment:gdhstep;border-top:4px solid var(--gdh-ink);padding-top:18px}
+.gdh-steps li::before{content:counter(gdhstep);display:block;font:900 7rem/.8 var(--gdh-display);font-stretch:125%;color:transparent;-webkit-text-stroke:2px var(--gdh-deep);margin-bottom:18px}
+.gdh-steps h3{margin:0 0 8px;font-size:1.3rem}
+.gdh-steps p{margin:0;color:var(--gdh-muted)}
+/* cards: full-width rows with a giant outlined index number */
+.gdh-cards{counter-reset:gdhcard;border-top:4px solid var(--gdh-ink)}
+.gdh-card{counter-increment:gdhcard;position:relative;display:grid;grid-template-columns:150px minmax(0,1.3fr) minmax(0,1fr) 48px;grid-template-areas:"num kicker desc go" "num title desc go" "num date desc go";column-gap:32px;align-items:start;padding:30px 8px 32px;border-bottom:2px solid var(--gdh-line);background:transparent;outline:3px solid transparent;outline-offset:-3px}
+.gdh-card::before{content:counter(gdhcard,decimal-leading-zero);grid-area:num;font:900 6.2rem/.8 var(--gdh-display);font-stretch:125%;color:transparent;-webkit-text-stroke:2px var(--gdh-ink)}
+.gdh-card:hover{background:var(--gdh-mint);outline-offset:-3px}
+.gdh-card p.kicker{grid-area:kicker;margin:0 0 8px}
+.gdh-card h2,.gdh-card h3{grid-area:title;margin:0;font:800 clamp(1.4rem,2.3vw,2rem)/1.08 var(--gdh-display);font-stretch:108%;letter-spacing:-.015em}
+.gdh-card h2 a,.gdh-card h3 a{color:var(--gdh-ink);text-decoration:none}
+.gdh-card h2 a::after,.gdh-card h3 a::after{content:"";position:absolute;inset:0}
+.gdh-card .card-date{grid-area:date;margin:14px 0 0;font:700 .8rem var(--gdh-sans);letter-spacing:.14em;color:var(--gdh-muted)}
+.gdh-card p:last-of-type{grid-area:desc;margin:0;color:var(--gdh-muted)}
+.gdh-card::after{content:"\2192";grid-area:go;justify-self:end;font:900 2.2rem/1 var(--gdh-display);color:var(--gdh-deep);transition:transform .15s}
+.gdh-card:hover::after{transform:translateX(5px)}
+/* 04 true numbers */
+.gdh-numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.gdh-numbers div{border-left:4px solid var(--gdh-turq);padding-left:18px}
+.gdh-numbers b{display:block;font:900 clamp(4rem,9vw,8rem)/.85 var(--gdh-display);font-stretch:125%;letter-spacing:-.04em;color:var(--gdh-ink)}
+.gdh-numbers span{display:block;margin-top:12px;color:var(--gdh-muted)}
+/* 05 closing band */
+.gdh-close{background:var(--gdh-turq);padding:96px 0;--gdh-ring:var(--gdh-ink)}
+.gdh-close .gdh-xxl{font-size:clamp(3rem,9.5vw,9rem);color:var(--gdh-ink)}
+.gdh-close-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px;margin-top:40px}
+.gdh-ticks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 30px;font:700 1rem var(--gdh-sans)}
+.gdh-ticks li{display:flex;align-items:center;gap:8px}
+.gdh-tick{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+/* blog index */
+.gdh-blog-head{background:var(--gdh-graphite);color:var(--gdh-white);padding:72px 0 64px}
+.gdh-blog-head .gdh-xxl{color:var(--gdh-white)}
+.gdh-blog-head p{color:var(--gdh-fog);max-width:52ch}
+.gdh-blog-head p.kicker{color:var(--gdh-turq)}
+.gdh-blog-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:28px}
+.gdh-blog{padding:72px 0 104px}
+/* articles: column-width banner, kicker, H1 and lead next to a sticky sidebar */
+.layout{max-width:var(--gdh-wide);margin:0 auto;padding:40px var(--gdh-pad) 96px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:start}
+.gdh-column{min-width:0}
+.article-breadcrumb{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px;font:600 .8rem var(--gdh-sans);letter-spacing:.06em;text-transform:uppercase;color:var(--gdh-muted)}
+.article-breadcrumb a{color:var(--gdh-deep)}
+.article-breadcrumb span[aria-current="page"]{color:var(--gdh-ink)}
+.gdh-column .hero-photo{margin:0 0 28px}
+.gdh-column .hero-photo img{display:block;width:100%;aspect-ratio:16/7;object-fit:cover;object-position:66% 14%;border-bottom:8px solid var(--gdh-turq)}
+.gdh-column .hero-photo figcaption{margin-top:8px;font:600 .74rem var(--gdh-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gdh-muted)}
+.gdh-post-head{margin:0 0 30px;border-bottom:4px solid var(--gdh-ink);padding-bottom:24px}
+.gdh-post-head h1{margin:0 0 14px;font:900 clamp(1.8rem,3.2vw,2.5rem)/1.06 var(--gdh-display);font-stretch:108%;letter-spacing:-.02em;text-wrap:balance}
+.gdh-post-head .lead{margin:0;font-size:1.15rem;color:var(--gdh-muted)}
+.article{background:var(--gdh-white);padding:40px 44px;border-top:8px solid var(--gdh-graphite)}
+.article .meta{color:var(--gdh-muted);font:600 .82rem var(--gdh-sans);letter-spacing:.06em;text-transform:uppercase;margin:0 0 22px;padding-bottom:16px;border-bottom:1px solid var(--gdh-line)}
+.article h2{font-size:clamp(1.5rem,2.4vw,1.9rem);font-stretch:108%;margin:46px 0 16px;padding-top:14px;border-top:4px solid var(--gdh-turq)}
+.article h3{font-size:1.2rem;margin:28px 0 10px}
+.article p,.article li{color:var(--gdh-ink)}
+.article ul,.article ol{padding-left:22px;margin:12px 0 20px}
+.article table{width:100%;border-collapse:collapse;margin:22px 0 28px;font-size:.95rem;display:block;overflow-x:auto}
+.article th{text-align:left;background:var(--gdh-graphite);color:var(--gdh-white);padding:12px 14px;border:1px solid var(--gdh-graphite)}
+.article td{padding:12px 14px;border:1px solid var(--gdh-line);vertical-align:top}
+.article blockquote{margin:24px 0;padding:16px 22px;border-left:4px solid #0a6e66;background:var(--gdh-mint);font-weight:600}
+.article details{border:2px solid var(--gdh-line);padding:14px 18px;margin:10px 0;background:var(--gdh-paper)}
+.article summary{cursor:pointer;font:800 1.02rem var(--gdh-display);color:var(--gdh-ink)}
+.article a{color:#0066cc}.article a:visited{color:#0052a3}
+.article .aios-video-card a{color:inherit}
+.article .ai-note{border-left-color:var(--gdh-deep)!important;background:var(--gdh-paper)!important}
+.sidebar{display:grid;gap:18px;position:sticky;top:20px;max-height:calc(100vh - 32px);overflow:auto;min-width:0;scrollbar-width:thin}
+.sidebar-panel{background:var(--gdh-white);border-top:4px solid var(--gdh-ink);padding:20px 22px}
+.sidebar-panel h3{margin:0 0 10px;font:800 .82rem var(--gdh-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gdh-deep)}
+.sidebar-panel p,.sidebar-panel li{color:var(--gdh-muted);font-size:.95rem}
+.sidebar-panel ul{margin:0;padding-left:18px}
+.gdh-side-cta{background:var(--gdh-graphite);color:var(--gdh-white);padding:26px 24px 28px}
+.gdh-side-cta .gdh-label{color:var(--gdh-turq)}
+.gdh-side-cta h3{margin:0 0 12px;font:900 2.3rem/.88 var(--gdh-display);font-stretch:120%;letter-spacing:-.02em;text-transform:uppercase;color:var(--gdh-white)}
+.gdh-side-cta p{color:var(--gdh-fog);font-size:.95rem;margin:0 0 18px}
+.gdh-side-cta .gdh-btn{width:100%;justify-content:space-between}
+/* static pages */
+.breadcrumb{background:transparent}
+.breadcrumb-inner{max-width:var(--gdh-wide)!important;margin:0 auto;padding:22px var(--gdh-pad) 0;font:600 .8rem var(--gdh-sans);letter-spacing:.06em;text-transform:uppercase;color:var(--gdh-muted);display:flex;flex-wrap:wrap;gap:8px}
+.breadcrumb-inner a{color:var(--gdh-deep)}
+.wrap{max-width:var(--gdh-wide);margin:0 auto;padding:24px var(--gdh-pad) 96px}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;align-items:start}
+.panel{background:var(--gdh-white);padding:40px 44px;border-top:8px solid var(--gdh-graphite);min-width:0}
+.panel h1{margin:0 0 22px;font:900 clamp(2.2rem,5vw,4rem)/.92 var(--gdh-display);font-stretch:115%;letter-spacing:-.03em;text-transform:uppercase}
+.panel h2{font-size:1.4rem;margin:34px 0 12px}
+.panel .intro{font-size:1.15rem;color:var(--gdh-muted)}
+.follow-sidebar-panel{background:var(--gdh-white);border-top:4px solid var(--gdh-ink);padding:20px 22px}
+.follow-sidebar-panel h2{margin:0 0 10px;font:800 .82rem var(--gdh-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gdh-deep)}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:7px 0;color:var(--gdh-ink)}
+[data-follow-sidebar]{position:sticky;top:20px}
+/* footer: link columns over a giant outlined wordmark */
+.gdh-foot{background:var(--gdh-graphite);color:var(--gdh-fog);padding:80px 0 0;margin-top:0}
+.gdh-foot-grid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(2,minmax(0,1fr));gap:48px}
+.gdh-foot p{margin:0 0 22px;max-width:44ch}
+.gdh-foot h2{margin:0 0 14px;font:700 .8rem var(--gdh-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gdh-turq)}
+.gdh-foot ul{list-style:none;margin:0;padding:0}
+.gdh-foot li a{display:inline-block;padding:7px 0;color:var(--gdh-white);text-decoration:none;font-weight:600}
+.gdh-foot li a:hover{text-decoration:underline;text-decoration-color:var(--gdh-turq);text-decoration-thickness:3px}
+.gdh-wordmark{display:block;margin:72px 0 0;font:900 clamp(3rem,12.4vw,12rem)/.8 var(--gdh-display);font-stretch:125%;letter-spacing:-.045em;text-transform:uppercase;white-space:nowrap;color:transparent;-webkit-text-stroke:2px var(--gdh-turq);overflow:hidden}
+.gdh-legal{border-top:1px solid var(--gdh-graphite2);margin-top:28px;padding:20px 0 28px;font-size:.85rem}
+.gdh-legal .gdh-shell{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+@media(max-width:1439px){:root{--gdh-pad:32px}.gdh-section{padding:88px 0}}
+@media(max-width:1024px){.gdh-nav{display:none}.gdh-menu{display:block}.gdh-top-in{position:static}.gdh-top{position:relative}
+.gdh-hero-row{grid-template-columns:minmax(0,1fr);gap:32px}.gdh-boxes{grid-template-columns:minmax(0,1fr)}
+.gdh-steps,.gdh-numbers{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gdh-card{grid-template-columns:96px minmax(0,1fr) 36px;grid-template-areas:"num kicker go" "num title go" "num date go" "num desc go"}
+.gdh-card::before{font-size:4rem}.gdh-card p:last-of-type{margin-top:12px}
+.layout,.follow-sidebar-layout{grid-template-columns:minmax(0,1fr)}
+.sidebar,[data-follow-sidebar]{position:static;max-height:none;overflow:visible}
+.gdh-foot-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.gdh-foot-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:640px){:root{--gdh-pad:18px}.gdh-section{padding:64px 0}.gdh-top-in{min-height:64px}.gdh-brand{font-size:1.15rem}.gdh-brand small{display:none}
+.gdh-hero{padding:44px 0 56px;background-size:calc(100%/4) 100%}.gdh-head{display:block}.gdh-head .gdh-textlink{display:inline-block;margin-top:18px}
+.gdh-steps,.gdh-numbers{grid-template-columns:minmax(0,1fr)}.gdh-steps li::before{font-size:5rem}
+.gdh-card{grid-template-columns:minmax(0,1fr) 30px;grid-template-areas:"num go" "kicker go" "title go" "date go" "desc go";padding:24px 4px}
+.gdh-card::before{font-size:3.2rem;margin-bottom:10px}
+.layout{padding:24px var(--gdh-pad) 64px;gap:32px}.article,.panel{padding:26px 20px}
+.gdh-btn{width:100%;justify-content:space-between}.gdh-actions{gap:20px}
+.gdh-foot-grid{grid-template-columns:minmax(0,1fr)}.gdh-wordmark{-webkit-text-stroke:1px var(--gdh-turq)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+@media print{.gdh-skip,.gdh-top,.gdh-tape,.gdh-foot,.gdh-side-cta{display:none!important}body{background:#fff}}
+</style></head>
 <body>
-<header class="sc-topbar">
-  <div class="sc-topbar-inner">
-    <a class="sc-topbar-brand" href="/">Great Dane Guide</a>
-    <nav>
-      <ul class="sc-topbar-nav">
-        <li><a href="/" aria-current="page">Home</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/care.html">Care</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/sitemap.html">Sitemap</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<!-- TOP BAR -->
-
-
-
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="breadcrumb-inner">
-    <a href="/">Home</a><span>›</span> Great Dane Guide
-  </div>
-</div>
-
-<!-- PAGE LAYOUT -->
-<section class="sd-cover sd-band">
-  <div class="sd-cover-text">
-    <h1>Everything About Great Danes</h1>
-    <p class="intro">Your complete resource for Great Dane lovers — breed facts, health tips, training advice, and national day ideas.</p>
-    <div class="categories">
-      <span class="cat-tag">Care Tips</span>
-      <span class="cat-tag">Breed Facts</span>
-      <span class="cat-tag">Health</span>
-      <span class="cat-tag">Training</span>
-    </div>
-  </div>
-  <figure class="sd-art home-editorial-photo" data-home-photo="20261025"><img src="/assets/home-editorial-20261025.webp" alt="harlequin Great Dane standing gently in a spacious living room" width="1536" height="1024" fetchpriority="high" decoding="async" data-ai-generated="true"><figcaption>AI-generated illustration.</figcaption></figure>
-</section>
-<div class="page-wrap" data-follow-parent="true">
-
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-
-    
-        
-        
-        
-    
-  <article style="background:#f9f9f9; border-left:4px solid #431407; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/great-dane-teenage-phase.html" style="color:#351005; text-decoration:none;">Great Dane Teenage Phase: Nipping, Zoomies and Limits</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-11-03</p>
-            <p style='color:#555; margin:8px 0 0;'>Great Dane teenage phase help for nipping, zoomies, and ignored cues. Build a practical training plan with calm routines, clear limits, and reward-based steps.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #431407; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/flying-with-a-great-dane-bark-air-k9-jets-jsx-cargo.html" style="color:#351005; text-decoration:none;">Flying With a Great Dane: BARK Air vs K9 Jets vs JSX vs Cargo</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-20</p>
-            <p style='color:#555; margin:8px 0 0;'>Flying with a Great Dane in the cabin: BARK Air, K9 Jets, JSX and cargo compared on size limits, prices and the travel day, plus a fit checker.</p>
-        </article>
-  </main>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar" data-follow-sidebar="existing">
-    
-    
-
-    <div class="sidebar-about">
-      <strong>About Great Dane Guide</strong>
-      Dedicated to Great Dane owners and enthusiasts. In-depth guides, care tips, and national dog day coverage.
-    </div>
-
-    <div class="sidebar-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/blog.html">Latest Articles</a></li>
-        <li><a href="/care.html">Great Dane Care Guide</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/privacy.html">Privacy</a></li>
-        <li><a href="/sitemap.html">Sitemap</a></li>
-      </ul>
-      <h4>Latest articles</h4><ul><li><a href="/great-dane-teenage-phase.html">Great Dane Teenage Phase: Nipping, Zoomies and Limits</a></li><li><a href="/flying-with-a-great-dane-bark-air-k9-jets-jsx-cargo.html">Flying With a Great Dane: BARK Air vs K9 Jets vs JSX vs Cargo</a></li></ul>
-    </div>
-  </aside>
-
-</div>
-
-<!-- FULL-WIDTH EMAIL BLOCK (wszystkie blogi) -->
-
-
-<!-- FOOTER -->
-
-
-
-
-<script>
-  function handleSidebarSubmit(e) {
-    e.preventDefault();
-    var btn = e.target.querySelector('button');
-    btn.textContent = 'Thanks! ✓';
-    return false;
-  }
-  function handleBannerSubmit() {
-    var em = document.getElementById('banner-email');
-    if (!em || !em.value.includes('@')) return;
-    em.value = '';
-    em.placeholder = 'Thanks! ✓';
-    em.disabled = true;
-  }
-  function handleBottomSubmit() {
-    var em = document.getElementById('bottom-email');
-    if (!em || !em.value.includes('@')) return;
-    em.value = '';
-    em.placeholder = 'Thanks! ✓';
-    em.disabled = true;
-  }
-  function handleEmbedSubmit(e) {
-    e.preventDefault();
-    var btn = e.target.querySelector('button');
-    btn.textContent = 'Thanks! ✓';
-    return false;
-  }
-</script>
-<footer class="sc-footer">
-  <div class="sc-footer-nav">
-    <a href="/">Home</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/about.html">About</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/sitemap.html">Sitemap</a>
-  </div>
-  <p>&copy; 2026 great-dane-hub.github.io &mdash; Great Dane Guide. All rights reserved.</p>
-</footer>
-</body>
+<a class="gdh-skip" href="#content">Skip to content</a><header class="gdh-top"><div class="gdh-shell gdh-top-in"><a class="gdh-brand" href="/">Great Dane Guide<small>XL</small></a><nav class="gdh-nav" aria-label="Main"><a href="/blog.html">Guides</a><a href="/care.html">Care</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="gdh-nav-cta" data-gdh-cta="nav" href="/great-dane-crate-bed-car-size-calculator.html">Size calculator</a></nav><details class="gdh-menu"><summary aria-label="Open the menu">Menu</summary><nav aria-label="Mobile"><a class="gdh-menu-main" data-gdh-cta="nav_mobile" href="/great-dane-crate-bed-car-size-calculator.html">Size calculator <span aria-hidden="true">&rarr;</span></a><a class="gdh-menu-main" href="/blog.html">All guides <span aria-hidden="true">&rarr;</span></a><p class="gdh-menu-more"><a href="/">Home</a><a href="/care.html">Care</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/sitemap.html">Sitemap</a></p></nav></details></div></header><div class="gdh-tape" aria-hidden="true"></div><main id="content"><section class="gdh-hero"><div class="gdh-shell"><p class="kicker">Great Dane Guide &middot; notes for owners of giants</p><h1 class="gdh-xxl">Big dog.<br><em>Bigger</em> gear.</h1><div class="gdh-hero-row"><figure class="gdh-photo"><img src="/assets/home-editorial-20261025.webp" width="1536" height="1024" alt="Harlequin Great Dane standing in a bright living room - AI-generated illustration" fetchpriority="high" decoding="async" data-ai-generated="true"><figcaption>AI-generated illustration</figcaption></figure><div><p class="gdh-lead">Practical guides on training, behaviour, gear and travel with a Great Dane, plus a free calculator that turns your dog&rsquo;s height into crate, bed and car boot sizes.</p><div class="gdh-actions"><a class="gdh-btn" data-gdh-cta="home_hero" href="/great-dane-crate-bed-car-size-calculator.html">Size crate, bed &amp; boot <span class="gdh-arrow" aria-hidden="true">&rarr;</span></a><a class="gdh-textlink" href="/blog.html">Read the guides <span class="gdh-arrow" aria-hidden="true">&rarr;</span></a></div></div></div></div></section><section class="gdh-section gdh-dark-band"><div class="gdh-shell"><div class="gdh-head"><div><p class="gdh-label"><b>01</b>Size it</p><h2>One height, three sizes</h2><p>Standard size charts stop where a Great Dane starts. Measure once and see what actually fits.</p></div></div><div class="gdh-boxes"><a class="gdh-box" data-gdh-cta="home_crate" href="/great-dane-crate-bed-car-size-calculator.html#gdh-crate"><svg class="gdh-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="5" y="11" width="38" height="28"/><path d="M13 11v28M21 11v28M29 11v28M37 11v28M5 43h38"/></svg><h3>Crate</h3><p>Inside length and height from your Dane, plus the smallest standard crate class that fits.</p><span class="gdh-more">Size the crate <span class="gdh-arrow" aria-hidden="true">&rarr;</span></span></a><a class="gdh-box" data-gdh-cta="home_bed" href="/great-dane-crate-bed-car-size-calculator.html#gdh-bed"><svg class="gdh-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="4" y="20" width="40" height="16" rx="6"/><path d="M10 26h28M8 36v5M40 36v5"/></svg><h3>Bed</h3><p>A bed long enough to stretch out on, not just to curl up on.</p><span class="gdh-more">Size the bed <span class="gdh-arrow" aria-hidden="true">&rarr;</span></span></a><a class="gdh-box" data-gdh-cta="home_boot" href="/great-dane-crate-bed-car-size-calculator.html#gdh-boot"><svg class="gdh-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M4 32l5-12h20l9 7h6v9H4z"/><circle cx="13" cy="37" r="4"/><circle cx="35" cy="37" r="4"/><path d="M29 20v7M38 27v-9"/></svg><h3>Car boot</h3><p>Floor length and height to lie down or stand, checked against your own boot.</p><span class="gdh-more">Check the boot <span class="gdh-arrow" aria-hidden="true">&rarr;</span></span></a></div></div></section><section class="gdh-section"><div class="gdh-shell"><div class="gdh-head"><div><p class="gdh-label"><b>02</b>How it works</p><h2>Four steps, one tape</h2></div></div><ol class="gdh-steps"><li><h3>Measure the shoulder</h3><p>Floor to the top of the shoulder blades, with your Dane standing square.</p></li><li><h3>Add head and length</h3><p>Optional: floor to the top of the head, and nose to the base of the tail.</p></li><li><h3>Pick the extra room</h3><p>Snug, standard or roomy: 5, 10 or 15 cm on top of the dog.</p></li><li><h3>Take the card</h3><p>Print the size card, download it as text or copy it to your phone.</p></li></ol></div></section><section class="gdh-section gdh-white-band"><div class="gdh-shell"><div class="gdh-head"><div><p class="gdh-label"><b>03</b>From the blog</p><h2>New guides</h2></div><a class="gdh-textlink" href="/blog.html">All guides <span class="gdh-arrow" aria-hidden="true">&rarr;</span></a></div><div class="gdh-cards"><article class="card gdh-card"><p class="kicker">Training</p><h3><a href="/great-dane-teenage-phase.html">Great Dane Teenage Phase: Nipping, Zoomies and Limits</a></h3><p class="card-date">2026-11-03</p><p>Great Dane teenage phase help for nipping, zoomies, and ignored cues. Build a practical training plan with calm routines, clear limits, and reward-based steps.</p></article><article class="card gdh-card"><p class="kicker">Travel &amp; gear</p><h3><a href="/flying-with-a-great-dane-bark-air-k9-jets-jsx-cargo.html">Flying With a Great Dane: BARK Air vs K9 Jets vs JSX vs Cargo</a></h3><p class="card-date">2026-10-20</p><p>Flying with a Great Dane in the cabin: BARK Air, K9 Jets, JSX and cargo compared on size limits, prices and the travel day, plus a fit checker.</p></article></div></div></section><section class="gdh-section"><div class="gdh-shell"><div class="gdh-head"><div><p class="gdh-label"><b>04</b>The calculator in numbers</p><h2>Built for giants</h2></div></div><div class="gdh-numbers"><div><b>3</b><span>sizes from one measurement: crate, bed and car boot</span></div><div><b>4</b><span>standard crate classes checked, 36 to 54 inches</span></div><div><b>2</b><span>units, centimetres or inches</span></div><div><b>0</b><span>sign-ups. Your numbers stay in your browser</span></div></div></div></section><section class="gdh-close"><div class="gdh-shell"><p class="gdh-label" style="color:var(--gdh-ink)"><b>05</b>Ready?</p><h2 class="gdh-xxl">Measure once.<br>Buy once.</h2><div class="gdh-close-row"><ul class="gdh-ticks"><li><svg class="gdh-tick" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13l5 5L20 6"/></svg>No sign-up</li><li><svg class="gdh-tick" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13l5 5L20 6"/></svg>Saved on your device only</li><li><svg class="gdh-tick" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 13l5 5L20 6"/></svg>Print or download</li></ul><a class="gdh-btn gdh-dark" data-gdh-cta="home_close" href="/great-dane-crate-bed-car-size-calculator.html">Open the calculator <span class="gdh-arrow" aria-hidden="true">&rarr;</span></a></div></div></section></main><footer class="gdh-foot"><div class="gdh-shell"><div class="gdh-foot-grid"><div><p>Notes for people who live with the biggest dog in the room: behaviour, training, gear, travel and everyday life with a Great Dane. Articles are written with AI assistance and checked against their linked sources before publishing.</p><a class="gdh-btn" data-gdh-cta="footer" href="/great-dane-crate-bed-car-size-calculator.html">Size crate, bed &amp; boot <span class="gdh-arrow" aria-hidden="true">&rarr;</span></a></div><nav aria-label="Read"><h2>Read</h2><ul><li><a href="/">Home</a></li><li><a href="/blog.html">All guides</a></li><li><a href="/care.html">Care</a></li><li><a href="/great-dane-crate-bed-car-size-calculator.html">Size calculator</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul></nav><nav aria-label="The blog"><h2>The blog</h2><ul><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/editorial-policy.html">Editorial policy</a></li><li><a href="/disclosure.html">Disclosure</a></li><li><a href="/privacy.html">Privacy</a></li></ul></nav></div><span class="gdh-wordmark" aria-hidden="true">Great Dane</span></div><div class="gdh-legal"><div class="gdh-shell"><span>&copy; 2026 great-dane-hub.github.io &mdash; Great Dane Guide</span><span>XXL design and size calculator, 2026-11-04 &middot; set in Archivo &amp; Public Sans</span></div></div></footer>
+<script id="gdh-events">window.dataLayer=window.dataLayer||[];function gdhTrack(n,p){window.dataLayer.push(Object.assign({event:n,site:'great-dane-hub'},p||{}));if(window.gtag)window.gtag('event',n,p||{});}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-gdh-cta]');if(a)gdhTrack('gdh_size_cta_click',{from:a.getAttribute('data-gdh-cta')});});</script></body>
 </html>
